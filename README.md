@@ -1,6 +1,6 @@
 # AgroQuimicos
 El sistema automatiza el control de inventario, ventas y almacenamiento de productos agrícolas para la distribuidora de agroquímicos La Cordialidad.
-Samuel Diaz Serpa | Developer | samu283
+Samuel Diaz Serpa | Product Owner | samu283
 Juan David Perez Romero | Developer  | MuchxjuanPR
 Jorge Estiven Orejuela Perez|  Scrum Master| orejuelajorge567
 Jean pierre Bolaño Mesa | Developer | jeanpierrebolanomeza-ops
@@ -12,3 +12,5 @@ Jean pierre Bolaño Mesa | Developer | jeanpierrebolanomeza-ops
 - Una rama por historia (feature/, fix/ o docs/).
 - Nadie sube directo a main: todo entra por pull request con una aprobación.
 - Los mensajes de commit van en presente y explican qué se hizo.
+## Rama de corrección de bugs
+Prueba de flujo de trabajo en la rama feature/fix/cazabugs.
