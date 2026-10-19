@@ -12,3 +12,4 @@ Jean pierre Bolaño Mesa | Developer | jeanpierrebolanomeza-ops
 - Una rama por historia (feature/, fix/ o docs/).
 - Nadie sube directo a main: todo entra por pull request con una aprobación.
 - Los mensajes de commit van en presente y explican qué se hizo.
+#rama proyecto creada
