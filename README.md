@@ -1,6 +1,6 @@
 # AgroQuimicos
 El sistema automatiza el control de inventario, ventas y almacenamiento de productos agrícolas para la distribuidora de agroquímicos La Cordialidad.
-Samuel Diaz Serpa | Developer | samu283
+Samuel Diaz Serpa | Product owner | samu283
 Juan David Perez Romero | Developer  | MuchxjuanPR
 Jorge Estiven Orejuela Perez|  Scrum Master| orejuelajorge567
 Jean pierre Bolaño Mesa | Developer | jeanpierrebolanomeza-ops
