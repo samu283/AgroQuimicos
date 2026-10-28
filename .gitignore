@@ -1,0 +1,21 @@
+# Sistema operativo
+.DS
+_
+Store
+Thumbs.db
+# Editores
+.vscode/
+.idea/
+# Dependencias y archivos temporales
+node
+_
+modules/
+
+.log
+
+.tmp
+# Archivos con datos sensibles
+.env
+_
+request
+####
