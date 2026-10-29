@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos</title>
+</head>
+<body>
+<form action="/procesar-pedido" method="POST">
+        
+     
+        <div class="campo">
+            <label for="direccion">Dirección de Entrega *</label>
+            <textarea 
+                id="direccion" 
+                name="direccion" 
+                placeholder="Calle, número, apartamento, referencias..." 
+                required></textarea>
+        </div>
+
+        
+        <div class="campo">
+            <label for="telefono">Teléfono (10 dígitos) *</label>
+            <input 
+                type="tel" 
+                id="telefono" 
+                name="telefono" 
+                pattern="[0-9]{10}" 
+                title="Introduce un teléfono de 10 dígitos (solo números)" 
+                placeholder="Ej: 5512345678" 
+                required>
+        </div>
+
+     
+        <div class="campo">
+            <label for="notas">Notas Opcionales</label>
+            <textarea 
+                id="notas" 
+                name="notas" 
+                placeholder="Ej: Dejar en portería, el timbre no sirve..."></textarea>
+        </div>
+
+        
+        <button type="submit">Enviar Pedido</button>
+
+    </form>
+        
+</body>
+</html>
