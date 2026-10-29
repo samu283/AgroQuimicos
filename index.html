@@ -10,40 +10,36 @@
 </head>
 <body>
   <header class="site-header">
-    <h1>DomiBarrio</h1>
-    <p>Pide a los negocios de tu barrio</p>
+    <h1>Agroquimicos</h1>
+    <p>Disfruta de todo el catalogo de agroquimicos la cordialidad</p>
   </header>
 
   <main id="lista-negocios">
-    <h2>Negocios del barrio</h2>
+    <h2>Negocio del barrio</h2>
     
     <section class="negocio-caja">
-      <img src="foto1.jpg" alt="Panadería La Esquina">
-      <h3>Panadería La Esquina</h3>
-      <p class="texto-secundario">Pedido mínimo $10.000</p>
-      <p>Abierto</p>
+      <img src="img/Logo.jpg" alt="Logo del negocio">
+      <h3>Logo del negocio</h3>
+    
+      <form action="/buscar" method="get">
+  <label for="campo-busqueda">Buscar en el sitio:</label>
+  <input 
+    type="search" 
+    id="campo-busqueda" 
+    name="q" 
+    placeholder="Escribe lo que buscas..." 
+    required
+  >
+  <button type="submit">Buscar</button>
+</form>
+
       <button class="boton-menu">Ver menú</button>
     </section>
 
-    <section class="negocio-caja">
-      <img src="foto2.jpg" alt="Pizzería Don Carlo">
-      <h3>Pizzería Don Carlo</h3>
-      <p class="texto-secundario">Pedido mínimo $20.000</p>
-      <p>Abierto</p>
-      <button class="boton-menu">Ver menú</button>
-    </section>
-
-    <section class="negocio-caja">
-      <img src="foto3.jpg" alt="Tienda Doña Rosa">
-      <h3>Tienda Doña Rosa</h3>
-      <p class="texto-secundario">Pedido mínimo $8.000</p>
-      <p>Cerrado</p>
-      <button class="boton-menu">Ver menú</button>
-    </section>
-  </main>
+    
 
   <footer class="site-footer">
-    <p>DomiBarrio · Barranquilla</p>
+    <p>Agroquimicos  · Barranquilla</p>
   </footer>
     
 </body>
