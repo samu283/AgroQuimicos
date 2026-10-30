@@ -8,3 +8,17 @@ body {
     min-height: 100vh;            
     margin: 0;                    
 }
+
+.pedidos-container { width: 100%; overflow-x: auto; 
+     }
+
+
+table { width: 100%; border-collapse: collapse; 
+     min-width: 500px; 
+      font-family: sans-serif; } caption { font-weight: bold; font-size: 1.2rem; margin-bottom: 10px;
+         text-align: left; } th, td { padding: 12px 15px; 
+             text-align: left; border-bottom: 1px solid #e0e0e0;  } 
+             th { background-color: #f4f6f8; color: #333; }
+
+.estado { padding: 5px 10px; border-radius: 12px; font-size: 0.85rem; font-weight: bold; } 
+.preparando { background-color: #fff3cd; color: #856404; }
