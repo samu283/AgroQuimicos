@@ -382,3 +382,27 @@ tbody tr:hover {
         justify-self: start;
     }
 }
+
+/* ---------- Menú: foto del producto a la izquierda ---------- */
+.menu-productos li {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.producto-img {
+    width: 96px;
+    height: 96px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 8px;
+    background: var(--verde-100);
+    color: var(--texto-suave);
+    font-size: .75rem;
+}
+.producto-info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
