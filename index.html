@@ -3,46 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>AgroQuimicos</title>
-   <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=add,arrow_back,arrow_forward,arrow_upward,close,inventory_2,local_shipping,search,send,shopping_cart,visibility" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <h1>Agroquimicos</h1>
-    <p>Disfruta de todo el catalogo de agroquimicos la cordialidad</p>
-  </header>
+    <header class="site-header">
+        <h1>Agroquimicos</h1>
+        <p>Disfruta de todo el catalogo de agroquimicos la cordialidad</p>
+    </header>
 
-  <main id="lista-negocios">
-    <h2>Negocio del barrio</h2>
-    
-    <section class="negocio-caja">
-      <img src="img/Logo.jpg" alt="Logo del negocio">
-      <h3>Logo del negocio</h3>
-    
-      <form action="/buscar" method="get">
-  <label for="campo-busqueda">Buscar en el sitio:</label>
-  <input 
-    type="search" 
-    id="campo-busqueda" 
-    name="q" 
-    placeholder="Escribe lo que buscas..." 
-    required
-  >
-  <button type="submit">Buscar</button>
-</form>
-        
-      <a href="menu-negocio.html" ><button  class="boton-menu">Menú</button></a>
-      <a href="checkout.html" ><button  class="boton-datos">Datos</button></a>
-      <a href="pedidos.html" ><button  class="boton-pedidos">Pedidos</button></a>
-      
-    </section>
-  </main>
+    <main id="lista-negocios">
+        <h2>Negocio del barrio</h2>
 
-  <footer class="site-footer">
-    <p>Agroquimicos  · Barranquilla</p>
-  </footer>
-    
+        <section class="negocio-caja">
+            <img src="img/Logo.jpg" alt="Logo del negocio">
+            <h3>Logo del negocio</h3>
+
+            <form action="/buscar" method="get">
+                <label for="campo-busqueda">Buscar en el sitio:</label>
+                <input type="search" id="campo-busqueda" name="q" placeholder="Escribe lo que buscas..." required>
+                <button type="submit" class="boton secundario">Buscar</button>
+            </form>
+
+            <div class="botones centrado">
+                <a href="menu-negocio.html" class="boton principal">Ver menú <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+                <a href="checkout.html" class="boton secundario"><span class="material-symbols-outlined" aria-hidden="true">local_shipping</span> Datos</a>
+                <a href="pedidos.html" class="boton secundario"><span class="material-symbols-outlined" aria-hidden="true">inventory_2</span> Pedidos</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Agroquimicos · Barranquilla</p>
+    </footer>
 </body>
 </html>
