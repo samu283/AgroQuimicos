@@ -37,7 +37,68 @@
       
     </section>
   </main>
+    <header>
+    <h1 id="titulo">Mi proyecto</h1>
+    <p>Listado, formulario y datos guardados en el navegador</p>
+  </header>
 
+  <main>
+    <form id="formulario" class="formulario" novalidate>
+      <h2>Agregar un registro</h2>
+
+      <div class="campo" id="campo-titulo">
+        <label for="titulo-input">Nombre</label>
+        <input id="titulo-input" name="titulo" type="text" autocomplete="off">
+        <p class="mensaje-error" id="error-titulo"></p>
+      </div>
+
+      <div class="campo" id="campo-categoria">
+        <label for="categoria-input">Categoría</label>
+        <select id="categoria-input" name="categoria">
+          <option value="">Elige una…</option>
+        </select>
+        <p class="mensaje-error" id="error-categoria"></p>
+      </div>
+
+      <div class="campo" id="campo-subtitulo">
+        <label for="subtitulo-input">Descripción corta</label>
+        <input id="subtitulo-input" name="subtitulo" type="text" autocomplete="off">
+        <p class="mensaje-error"></p>
+      </div>
+
+      <div class="campo" id="campo-numero">
+        <label for="numero-input">Valor</label>
+        <input id="numero-input" name="numero" type="text" inputmode="numeric" autocomplete="off">
+        <p class="mensaje-error" id="error-numero"></p>
+      </div>
+
+      <div class="acciones">
+        <button class="btn" type="submit">Guardar</button>
+        <button class="btn btn-peligro" type="button" id="borrar-todo">Restaurar datos originales</button>
+        <span id="estado" role="status"></span>
+      </div>
+    </form>
+
+    <section class="filtros">
+      <input id="buscador" type="search" placeholder="Buscar por nombre">
+      <select id="categoria">
+        <option value="">Todas las categorías</option>
+      </select>
+      <select id="orden">
+        <option value="">Orden original</option>
+        <option value="menor">Menor a mayor</option>
+        <option value="mayor">Mayor a menor</option>
+      </select>
+    </section>
+
+    <p id="contador"></p>
+    <section id="lista" class="lista"></section>
+  </main>
+
+  <script src="js/06-domibarrio.js"></script>
+  <script src="js/logica.js"></script>
+  <script src="js/app.js"></script>
+   
   <footer class="site-footer">
     <p>Agroquimicos  · Barranquilla</p>
   </footer>
