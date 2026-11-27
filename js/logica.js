@@ -24,15 +24,31 @@ function armarItem(valores, nuevoId) {
 
 // TODO 3: devuelve el id más grande de la lista + 1 (1 si la lista está vacía)
 function siguienteId(lista) {
-  // TODO (pista: Math.max(...lista.map(d => d.id)))
+  if (lista.length === 0) {
+    return 1;
+  }
+  return Math.max(...lista.map(d => d.id)) + 1;
 }
 
 // TODO 4: filtra por texto (en titulo, sin importar mayúsculas) y por categoría,
 // y ordena por numero si orden es "menor" o "mayor". No modifiques la lista original.
 function filtrar(lista, texto, categoria, orden) {
-  // Por ahora devuelve la lista completa para que la página abra sin errores.
-  // TODO: reemplaza esta línea por el filtro y el orden.
-  return lista;
+  const buscado = texto.trim().toLowerCase();
+
+  // filter devuelve una lista nueva; una categoría vacía significa "todas"
+  const resultado = lista.filter(d =>
+    d.titulo.toLowerCase().includes(buscado) &&
+    (categoria === "" || d.categoria === categoria)
+  );
+
+  // sort cambia la lista sobre la que se usa: aquí es la copia, no la original
+  if (orden === "menor") {
+    resultado.sort((a, b) => a.numero - b.numero);
+  } else if (orden === "mayor") {
+    resultado.sort((a, b) => b.numero - a.numero);
+  }
+
+  return resultado;
 }
 
 if (typeof module !== "undefined") {
